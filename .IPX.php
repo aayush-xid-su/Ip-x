@@ -70,9 +70,9 @@ function menu() {
     echo "\033[01;32m  Bye ....... :)\n\n\033[00m";
     exit();
   } else if ($inp=="1") {
-    trac();
+    trx();
   } else if ($inp=="2") {
-    tracm();
+    trax();
   } else if ($inp=="3") {
     About();
   } else if ($inp=="4") {
