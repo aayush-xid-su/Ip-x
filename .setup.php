@@ -52,13 +52,13 @@ class set {
     }
     
     // removing IP-Tracer directory
-    if ($system=="termux") {
-      system("cd .. && rm -rf IPX");
-    } elseif ($system=="ubuntu") {
-      system("cd .. && sudo rm -rf IPX");
-    } else {
-      system("cd .. && rm -rf IPX");
-    }
+    // if ($system=="termux") {
+    //   system("cd .. && rm -rf IPX");
+    // } elseif ($system=="ubuntu") {
+    //   system("cd .. && sudo rm -rf IPX");
+    // } else {
+    //   system("cd .. && rm -rf IPX");
+    // }
   }
   function logo() {
     system("clear");

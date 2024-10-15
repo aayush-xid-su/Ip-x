@@ -42,11 +42,6 @@ if(!empty($data['status']) && $data['status'] == 'success') {
   echo "\n ".$FCL."Latitude      ".$MCL."   ".$data['lat'];
   echo "\n ".$FCL."Longtitude    ".$MCL."   ".$data['lon'];
   echo "\n ".$FCL."Location      ".$MCL."   ".$data['lat'].",".$data['lon'];
-  echo "\n ".$FCL."Offset        ".$MCL."   ".$data['offset'];
-  echo "\n ".$FCL."Geo           ".$MCL."   ".$data['geo'];
-  echo "\n ".$FCL."Mobile        ".$MCL."   ".$data['mobile'];
-  echo "\n ".$FCL."Proxy         ".$MCL."   ".$data['proxy'];
-  echo "\n ".$FCL."Hosting       ".$MCL."   ".$data['hosting'];
   echo "\n\n$NCL";
 } else {
   echo "\n\033[01;31m Sorry unable to track your\033[01;33m IP Address\033[01;31m !!!\033[00m\n";
