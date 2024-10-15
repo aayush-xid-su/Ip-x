@@ -1,0 +1,11 @@
+# Tool Name :- IPX
+# Author :- AAyush_xid_su
+# Date :- 10/12/2024
+# Powered By :- Xidiotic
+if [ -d /data/data/com.termux/files/usr/share ];then
+  cd /data/data/com.termux/files/usr/share/IPX
+  exec bash tracex $@
+elif [ -d /usr/share ];then
+  cd /usr/share/IPX
+  exec bash tracex $@
+fi
