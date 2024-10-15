@@ -32,7 +32,7 @@ function upd() {
   sleep(1);
   system("cd ~/ && git clone https://github.com/aayush-xid-su/Ip-x.git");
   system("cd ~/ && sudo git clone https://github.com/aayush-xid-su/Ip-x.git");
-  system("cd ~/IPX && sh install");
+  system("cd ~/Ip-x && sh install");
   logo();
   echo "\n\033[01;32m              IPX updated !!!\033[01;37m\n";
   sleep(1);
