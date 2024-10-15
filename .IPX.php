@@ -44,8 +44,8 @@ function upd() {
   logo();
   echo "\n\033[01;32mUpdating IPX.........\033[01;37m\n\n";
   sleep(1);
-  system("cd ~/ && git clone https://github.com/");
-  system("cd ~/ && sudo git clone https://github.com/");
+  system("cd ~/ && git clone https://github.com/aayush-xid-su/Ip-x.git");
+  system("cd ~/ && sudo git clone https://github.com/aayush-xid-su/Ip-x.git");
   system("cd ~/IP-Tracer && sh install");
   logo();
   echo "\n\033[01;32m              IPX updated !!!\033[01;37m\n";

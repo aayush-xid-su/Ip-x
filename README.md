@@ -14,7 +14,7 @@ IPX use ip-api to track ip address.
 
 * `apt install git -y`
 
-* `git clone `
+* `git clone https://github.com/aayush-xid-su/Ip-x.git`
 
 * `cd IPX`
 
