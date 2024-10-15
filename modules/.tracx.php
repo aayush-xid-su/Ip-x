@@ -26,23 +26,28 @@ system("clear");
 \033[00m
 EOL;
 
-if($data['status'] == 'success') {
-echo "\n ".$FCL."IP Address    ".$MCL."   ".$data['query'];
-echo "\n ".$FCL."Country code  ".$MCL."   ".$data['countryCode'];
-echo "\n ".$FCL."Country       ".$MCL."   ".$data['country'];
-echo "\n ".$FCL."Date & Time   ".$MCL."   ".date("F j, Y, g:i a");
-echo "\n ".$FCL."Region code   ".$MCL."   ".$data['region'];
-echo "\n ".$FCL."Region        ".$MCL."   ".$data['regionName'];
-echo "\n ".$FCL."City          ".$MCL."   ".$data['city'];
-echo "\n ".$FCL."Zip code      ".$MCL."   ".$data['zip'];
-echo "\n ".$FCL."Time zone     ".$MCL."   ".$data['timezone'];
-echo "\n ".$FCL."ISP           ".$MCL."   ".$data['isp'];
-echo "\n ".$FCL."Organization  ".$MCL."   ".$data['org'];
-echo "\n ".$FCL."ASN           ".$MCL."   ".$data['as'];
-echo "\n ".$FCL."Latitude      ".$MCL."   ".$data['lat'];
-echo "\n ".$FCL."Longtitude    ".$MCL."   ".$data['lon'];
-echo "\n ".$FCL."Location      ".$MCL."   ".$data['lat'].",".$data['lon'];
-echo "\n\n$NCL";
+if(!empty($data['status']) && $data['status'] == 'success') {
+  echo "\n ".$FCL."IP Address    ".$MCL."   ".$data['query'];
+  echo "\n ".$FCL."Country code  ".$MCL."   ".$data['countryCode'];
+  echo "\n ".$FCL."Country       ".$MCL."   ".$data['country'];
+  echo "\n ".$FCL."Date & Time   ".$MCL."   ".date("F j, Y, g:i a");
+  echo "\n ".$FCL."Region code   ".$MCL."   ".$data['region'];
+  echo "\n ".$FCL."Region        ".$MCL."   ".$data['regionName'];
+  echo "\n ".$FCL."City          ".$MCL."   ".$data['city'];
+  echo "\n ".$FCL."Zip code      ".$MCL."   ".$data['zip'];
+  echo "\n ".$FCL."Time zone     ".$MCL."   ".$data['timezone'];
+  echo "\n ".$FCL."Offset        ".$MCL."   ".$data['offset'];
+  echo "\n ".$FCL."ISP           ".$MCL."   ".$data['isp'];
+  echo "\n ".$FCL."Organization  ".$MCL."   ".$data['org'];
+  echo "\n ".$FCL."ASN           ".$MCL."   ".$data['as'];
+  echo "\n ".$FCL."Mobile        ".$MCL."   ".$data['mobile'];
+  echo "\n ".$FCL."proxy         ".$MCL."   ".$data['proxy'];
+  echo "\n ".$FCL."Hosting       ".$MCL."   ".$data['hosting'];
+  echo "\n ".$FCL."Geo           ".$MCL."   ".$data['geo'];
+  echo "\n ".$FCL."Latitude      ".$MCL."   ".$data['lat'];
+  echo "\n ".$FCL."Longtitude    ".$MCL."   ".$data['lon'];
+  echo "\n ".$FCL."Location      ".$MCL."   ".$data['lat'].",".$data['lon'];
+  echo "\n\n$NCL";
 } else {
   echo "\n\033[01;31m Sorry unable to track your\033[01;33m IP Address\033[01;31m !!!\033[00m\n";
   echo "\033[01;31m Check your \033[01;33mNetwork connection\033[01;31m !!\033[00m\n";
